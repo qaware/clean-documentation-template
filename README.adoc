@@ -6,9 +6,13 @@ TODOs:
 * Add antora and vale code
 ////
 
-This repo shows how @alex0ptr and @aeimer think how antora and vale can be used to document your sofotware and product better.
+This repo shows how
+https://github.com/alex0ptr[Alex Krause (@alex0ptr)]
+and
+https://github.com/aeimer[Alexander Eimer (@aeimer)]
+think how antora and vale can be used to document your sofotware and product better.
 
 == Support
 
-This project is only possible by the support of
+This project is made possible with the support of
 https://qaware.de[QAware GmbH].
