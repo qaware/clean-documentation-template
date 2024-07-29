@@ -10,7 +10,7 @@ This repo shows how
 https://github.com/alex0ptr[Alex Krause (@alex0ptr)]
 and
 https://github.com/aeimer[Alexander Eimer (@aeimer)]
-think how antora and vale can be used to document your sofotware and product better.
+think how AsciiDoc, Antora and vale can be used to document your software and product better.
 
 == Useful links
 
