@@ -25,4 +25,6 @@ think how AsciiDoc, Antora and vale can be used to document your software and pr
 == Support
 
 This project is made possible with the support of
-https://qaware.de[QAware GmbH].
+
+[link="https://qaware.de"]
+image::https://blog.qaware.de/images/icons/logo_qaware.svg[QAware GmbH logo,200]
