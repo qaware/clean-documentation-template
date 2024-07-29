@@ -12,6 +12,16 @@ and
 https://github.com/aeimer[Alexander Eimer (@aeimer)]
 think how antora and vale can be used to document your sofotware and product better.
 
+== Useful links
+
+* https://antora.org[Antora]
+* https://vale.sh[Vale]
+* https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
+* https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]
+* https://github.com/joelparkerhenderson/architecture-decision-record[Joels ADR]
+* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blamess.com]
+* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^]
+
 == Support
 
 This project is made possible with the support of
