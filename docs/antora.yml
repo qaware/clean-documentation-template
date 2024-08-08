@@ -1,0 +1,10 @@
+# Reference: https://docs.antora.org/antora/latest/component-version-descriptor/
+
+name: ROOT
+version: ~ # This component is unversioned. The latest commit is used
+title: Clean Documentation Template
+nav:
+  - modules/explanation/nav.adoc
+  - modules/how-to-guides/nav.adoc
+  - modules/reference/nav.adoc
+  - modules/tutorials/nav.adoc

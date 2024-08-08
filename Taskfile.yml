@@ -1,0 +1,42 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars: {}
+
+tasks:
+  default:
+    desc: If running only "task" print all available tasks
+    cmd: task --list-all
+    silent: true
+
+  generate:
+    desc: Generates documentation with antora
+    deps:
+      - npm-install
+    env:
+      ANTORA_LOG_FAILURE_LEVEL: warn
+      ANTORA_LOG_LEVEL: info
+    cmd: >-
+      npx antora
+      --asciidoc-sourcemap
+      --stacktrace
+      --fetch
+      --clean
+      antora-playbook.yml
+
+  open:
+    desc: Open the documentation via browser (also see serve)
+    cmd: open build/site/index.html
+
+  serve:
+    desc: Serves the static files with a local http server (also see open)
+    dir: build/site
+    cmd: npx http-server -o .
+
+  npm-install:
+    desc: Install npm packages
+    internal: true
+    preconditions:
+      - node -v | grep -E "^$(cat .nvmrc)"
+    cmd: npm install

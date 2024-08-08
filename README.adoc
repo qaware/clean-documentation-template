@@ -12,15 +12,56 @@ and
 https://github.com/aeimer[Alexander Eimer (@aeimer)]
 think how AsciiDoc, Antora and vale can be used to document your software and product better.
 
+[.text-center]
+****
+You can find the rendered Antora docs
+https://qaware.github.io/clean-documentation-template[here]
+****
+
+== Structure
+
+This repo has two main parts, the first can be found under
+xref:templates/[templates]
+and provide standalone files which can be used within the next part.
+
+The second part shows how to set up a working Antora and all the by us suggested  tooling.
+Almost any other files not under the `templates` directory belongs to this part.
+The templates provided are our suggestion to use within the documentation structure.
+
+== Using the Taskfile
+
+https://taskfile.dev[`Taskfile`]
+is a `Makefile` on steroids.
+You need to install Taskfile globally to use it.
+
+[source,bash]
+----
+# Install Taskfile via brew
+brew install go-task
+
+# Show all tasks available
+task
+
+# Render documentation
+task generate
+
+# Render documentation and open in browser
+task generate open
+
+# Open rendered documentation with http server
+task serve
+----
+
 == Useful links
 
+* https://diataxis.fr[Diátaxis]
 * https://antora.org[Antora]
 * https://vale.sh[Vale]
 * https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
 * https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]
 * https://github.com/joelparkerhenderson/architecture-decision-record[Joels ADR]
-* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blamess.com]
-* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^]
+* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blameless.com]
+* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[dastergon/postmortem-templates^]
 
 == Support
 
