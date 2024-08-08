@@ -1,6 +1,6 @@
 # Reference: https://github.com/errata-ai/vale-action
 
-name: verify
+name: Verify
 on:
   push:
     branches: [main]

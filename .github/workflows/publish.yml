@@ -1,6 +1,6 @@
 # Reference: https://docs.antora.org/antora/latest/publish-to-github-pages/
 
-name: Publish to GitHub Pages
+name: Publish
 on:
   push:
     branches: [main]
