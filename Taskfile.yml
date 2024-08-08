@@ -10,6 +10,11 @@ tasks:
     cmd: task --list-all
     silent: true
 
+  setup:
+    desc: Install everything needed
+    cmds:
+      - pre-commit install
+
   generate:
     desc: Generates documentation with antora
     deps:
