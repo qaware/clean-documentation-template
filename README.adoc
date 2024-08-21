@@ -4,6 +4,7 @@
 TODOs:
 * Add repo descriptions
 * Add antora and vale code
+* Add nice start page generated with jekyll
 ////
 
 This repo shows how
@@ -27,6 +28,43 @@ and provide standalone files which can be used within the next part.
 The second part shows how to set up a working Antora and all the by us suggested  tooling.
 Almost any other files not under the `templates` directory belongs to this part.
 The templates provided are our suggestion to use within the documentation structure.
+
+== Content
+
+From a technical perspective the following components are used.
+
+Antora::
+#TODO#
+
+Antora Lunr::
+#TODO#
+
+Antora Collector::
+#TODO#
+
+Antora Assembler::
+#TODO#
+
+Antora Kroki::
+#TODO#
+
+Vale::
+#TODO#
+
+Pre-Commit::
+#TODO#
+
+== Differences to the real world
+
+As this is a template which is contained within one repo, there are some differences to a real world setup.
+
+* As
+https://docs.antora.org/antora/latest/playbook/#where-is-a-playbook-stored[suggested by Antora]
+the playbook and the configuration files are stored in a separate repository.
+Having a "docs" repo with the playbook, config and some documentation content together works for some setups well, always look at your use-case.
+If in doubt start small and adapt if you grow.
+
+* You probably want to have different repos as source defined in the `antora-playbook.yml` with branches or tags as references which state to use.
 
 == Using the Taskfile
 
