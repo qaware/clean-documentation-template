@@ -56,6 +56,13 @@ task serve
 
 * https://diataxis.fr[Diátaxis]
 * https://antora.org[Antora]
+** https://gitlab.com/antora/antora-collector-extension[Antora collector] +
+A hook plugin to run custom code while generating the docs.
+It can be used to auto-generate `nav.adoc` files for dynamic content.
+** https://gitlab.com/antora/antora-assembler[Antora assembler] +
+A plugin which has pure AsciiDoc as output and has all the Antora magic removed.
+It can be used to generate PDFs with the whole content.
+** https://www.ahus1.de/post/content-pipeline-antora[Alexander Schwartz's talk about Antora]
 * https://vale.sh[Vale]
 * https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
 * https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]

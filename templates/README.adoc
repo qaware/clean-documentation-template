@@ -64,4 +64,3 @@ This should ensure to not have the problem ever again with the action items defi
 
 Template is inspired by the Google book "SRE", the template is adapted from
 https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^].
-
