@@ -32,8 +32,19 @@ asciidoc:
     # https://kroki.io
     # https://github.com/asciidoctor/asciidoctor-kroki
     - asciidoctor-kroki
+    # Antora uses in highlight.js to style code in the browser, this extension highlights the code at build time.
+    # Antora resolves names that look like files relative to the project folder, therefore add a slash as the npm package should be used.
+    - asciidoctor-highlight.js/
   attributes:
-    kroki-fetch-diagram: true # Download images from kroki and do not fetch at "read time"
+    # Download images from kroki and do not fetch at "read time"
     # If you don't want to send your data to kroki.io you can run your own kroki container/server
     # https://github.com/asciidoctor/asciidoctor-kroki#using-your-own-kroki
     # kroki-server-url: http://localhost:8000 # For locally running kroki
+    kroki-fetch-diagram: true
+    # Use build time highlighter by default
+    source-highlighter: highlightjs-ext
+
+runtime:
+  log:
+    failure_level: warn
+    level: info

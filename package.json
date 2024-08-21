@@ -1,8 +1,17 @@
 {
+  "name": "clean-documentation-template",
+  "version": "1.0.0",
+  "description": "Starting point to setup your own Antora based documentation",
+  "maintainers": [
+    {"name": "Alexander Eimer", "url": "https://github.com/aeimer"},
+    {"name": "Alexander Krause", "url": "https://github.com/alex0ptr"}
+  ],
+  "private": true,
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.8",
     "antora": "^3.1.9",
     "asciidoctor": "^3.0.4",
+    "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.18.1"
   },
   "devDependencies": {
