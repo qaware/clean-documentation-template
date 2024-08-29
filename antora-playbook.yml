@@ -9,6 +9,8 @@ content:
     - url: .
       start_path: docs/ROOT
     - url: .
+      start_path: docs/administration-guide
+    - url: .
       start_path: docs/architecture
     - url: .
       start_path: docs/developer-guide
