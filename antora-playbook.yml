@@ -42,6 +42,10 @@ asciidoc:
     # Antora resolves names that look like files relative to the project folder, therefore add a slash as the npm package should be used.
     - asciidoctor-highlight.js/
   attributes:
+    # Set better defaults for xhref IDs
+    # https://docs.asciidoctor.org/asciidoc/latest/sections/id-prefix-and-separator/
+    idprefix: ''
+    idseparator: '-'
     # Download images from kroki and do not fetch at "read time"
     # If you don't want to send your data to kroki.io you can run your own kroki container/server
     # https://github.com/asciidoctor/asciidoctor-kroki#using-your-own-kroki

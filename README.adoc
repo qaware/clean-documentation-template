@@ -100,13 +100,17 @@ It can be used to auto-generate `nav.adoc` files for dynamic content.
 ** https://gitlab.com/antora/antora-assembler[Antora assembler] +
 A plugin which has pure AsciiDoc as output and has all the Antora magic removed.
 It can be used to generate PDFs with the whole content.
-** https://www.ahus1.de/post/content-pipeline-antora[Alexander Schwartz's talk about Antora]
 * https://vale.sh[Vale]
 * https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
 * https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]
 * https://github.com/joelparkerhenderson/architecture-decision-record[Joels ADR]
 * https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blameless.com]
 * https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[dastergon/postmortem-templates^]
+* https://ahus1.de[Alexander Schwartz]
+** https://www.ahus1.de/post/content-pipeline-antora[Talk about Antora] +
+=> https://github.com/ahus1/antora-extensions-demo[Demo repo to the talk]
+** https://www.ahus1.de/post/documentation-site-antora[Another talk about Antora] +
+=> https://github.com/ahus1/intellij-asciidoc-plugin.ahus1.de[IntelliJ AsciiDoc Plugin documentation]
 
 == Support
 
