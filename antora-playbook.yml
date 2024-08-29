@@ -7,7 +7,13 @@ site:
 content:
   sources:
     - url: .
-      start_path: docs
+      start_path: docs/ROOT
+    - url: .
+      start_path: docs/architecture
+    - url: .
+      start_path: docs/developer-guide
+    - url: .
+      start_path: docs/user-guide
 
 ui:
   bundle:
