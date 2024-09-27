@@ -6,3 +6,7 @@ clean-documentation-template.iml
 
 node_modules/
 build/
+
+# Vale
+.github/styles/*
+!.github/styles/config/

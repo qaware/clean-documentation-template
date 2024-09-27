@@ -3,6 +3,7 @@
 site:
   title: Clean Documentation Template
   url: https://qaware.github.io/clean-documentation-template
+  start_page: ROOT:ROOT:index.adoc
 
 content:
   sources:

@@ -89,6 +89,8 @@ task generate
 
 # Render documentation and open in browser
 task generate open
+# or
+task g o
 
 # Open rendered documentation with http server
 task serve

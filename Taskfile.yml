@@ -3,7 +3,7 @@
 version: '3'
 
 env:
-  VALE_CONFIG_PATH: .vale/vale.ini
+  VALE_CONFIG_PATH: .vale.ini
 
 vars: {}
 
@@ -37,7 +37,7 @@ tasks:
     deps: [brew]
     cmd: vale sync
     status:
-      - test -d .vale/styles/Google
+      - test -d .github/styles/Google
 
   generate:
     desc: Generates documentation with antora
@@ -79,7 +79,7 @@ tasks:
     deps: [setup]
     run: once
     cmds:
-      - find . -name "*.adoc" | sort | xargs vale --no-wrap
+      - find . -name "*.adoc" -not -path "./node_modules/*" | sort | xargs vale --no-wrap
 
   pre-commit:
     desc: run pre-commit checks
