@@ -2,9 +2,10 @@
 
 ////
 TODOs:
+* nav.adoc's are missing
 * Add repo descriptions
-* Add antora and vale code
-* Add nice start page generated with jekyll
+* Use dockerized build => CI and local use for antora build
+  https://github.com/qaware/clean-documentation-template/pull/1#discussion_r1736311093
 ////
 
 This repo shows how
@@ -74,7 +75,10 @@ You need to install Taskfile globally to use it.
 
 [source,bash]
 ----
-# Install Taskfile via brew
+# Install required dependencies via Brewfile
+brew bundle
+
+# Alternatively, install at least Taskfile (manually)
 brew install go-task
 
 # Show all tasks available

@@ -1,10 +1,11 @@
-= Known issues
+= How to apply this template repo?
 
 * This project keeps the Antora config (`antora-playbook.yml`) and the content in the same repo.
 This is considered a
 https://docs.antora.org/antora/latest/playbook/#where-is-a-playbook-stored[bad idea].
 To fix this your `antora-playbook.yml` should look something like this.
 +
+.A real-world `antora-playbook.yml` example
 [source,yaml]
 ----
 # ...
