@@ -6,6 +6,7 @@ TODOs:
 * Add repo descriptions
 * Use dockerized build => CI and local use for antora build
   https://github.com/qaware/clean-documentation-template/pull/1#discussion_r1736311093
+* Add jekyll startpage just like https://github.com/ahus1/intellij-asciidoc-plugin.ahus1.de/tree/main/startpage
 ////
 
 This repo shows how
