@@ -1,0 +1,99 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  VALE_CONFIG_PATH: .vale.ini
+
+vars: {}
+
+tasks:
+  default:
+    desc: If running only "task" print all available tasks
+    cmd: task --list-all
+    silent: true
+
+  setup:
+    desc: Install everything needed
+    run: once
+    deps: [brew]
+    cmds:
+      - pre-commit install
+      - task: vale-sync
+
+  brew:
+    desc: Install tool dependencies with brew
+    internal: true
+    run: once
+    platforms: [darwin, linux]
+    cmd: brew bundle --no-lock --verbose
+    status:
+      - brew bundle check --verbose
+
+  vale-sync:
+    desc: install tool-internal dependencies
+    internal: true
+    run: once
+    deps: [brew]
+    cmd: vale sync
+    status:
+      - test -d .github/styles/Google
+
+  generate:
+    desc: Generates documentation with antora
+    aliases: [g, gen]
+    deps:
+      - npm-install
+    env:
+      ANTORA_LOG_FAILURE_LEVEL: warn
+      ANTORA_LOG_LEVEL: info
+    cmd: >-
+      npx antora
+      --asciidoc-sourcemap
+      --stacktrace
+      --fetch
+      --clean
+      antora-playbook.yml
+
+  open:
+    desc: Open the documentation via browser (also see serve)
+    aliases: [o]
+    cmd: open build/site/index.html
+
+  serve:
+    desc: Serves the static files with a local http server (also see open)
+    aliases: [s]
+    dir: build/site
+    cmd: npx http-server -o .
+
+  npm-install:
+    desc: Install npm packages
+    internal: true
+    preconditions:
+      - node -v | grep -E "^$(cat .nvmrc)"
+    cmd: npm install
+
+  vale-lint:
+    desc: check adoc-files
+    aliases: [vl, lint]
+    deps: [setup]
+    run: once
+    cmds:
+      - find . -name "*.adoc" -not -path "./node_modules/*" | sort | xargs vale --no-wrap
+
+  pre-commit:
+    desc: run pre-commit checks
+    aliases: [pc]
+    deps: [setup]
+    run: once
+    cmds:
+      - pre-commit run --all-files
+
+  validate:
+    desc: run all quality checks
+    aliases: [v]
+    deps: [setup]
+    run: once
+    cmds:
+      - task: vale-lint
+      - task: pre-commit

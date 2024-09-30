@@ -1,0 +1,33 @@
+# Reference: https://pre-commit.com
+
+default_install_hook_types:
+  - pre-commit
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+
+  - repo: https://github.com/errata-ai/vale
+    rev: v3.7.0
+    hooks:
+      - id: vale
+
+#  # TODO: Add hook which checks the file(path)s under docs => only lowercase allowed
+#  - repo: local
+#    hooks:
+#      - id: antora-files-lowercase-only
+#        name: antora lower-case filenames only
+#        entry: filenames and folders must be lower-case for Antora
+#        language: fail
+#        # TODO: Make regex work
+#        # https://regex101.com/r/iRCDJL/1
+#        files: '^(docs/(modules/ROOT/)?).*[^a-z0-9._/-]'

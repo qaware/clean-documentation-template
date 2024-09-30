@@ -2,8 +2,11 @@
 
 ////
 TODOs:
+* nav.adoc's are missing
 * Add repo descriptions
-* Add antora and vale code
+* Use dockerized build => CI and local use for antora build
+  https://github.com/qaware/clean-documentation-template/pull/1#discussion_r1736311093
+* Add jekyll startpage just like https://github.com/ahus1/intellij-asciidoc-plugin.ahus1.de/tree/main/startpage
 ////
 
 This repo shows how
@@ -12,15 +15,109 @@ and
 https://github.com/aeimer[Alexander Eimer (@aeimer)]
 think how AsciiDoc, Antora and vale can be used to document your software and product better.
 
+[.text-center]
+****
+You can find the rendered Antora docs
+https://qaware.github.io/clean-documentation-template[here]
+****
+
+== Structure
+
+This repo has two main parts, the first can be found under
+xref:templates/[templates]
+and provide standalone files which can be used within the next part.
+
+The second part shows how to set up a working Antora and all the by us suggested  tooling.
+Almost any other files not under the `templates` directory belongs to this part.
+The templates provided are our suggestion to use within the documentation structure.
+
+== Content
+
+From a technical perspective the following components are used.
+
+Antora::
+#TODO#
+
+Antora Lunr::
+#TODO#
+
+Antora Collector::
+#TODO#
+
+Antora Assembler::
+#TODO#
+
+Antora Kroki::
+#TODO#
+
+Vale::
+#TODO#
+
+Pre-Commit::
+#TODO#
+
+== Differences to the real world
+
+As this is a template which is contained within one repo, there are some differences to a real world setup.
+
+* As
+https://docs.antora.org/antora/latest/playbook/#where-is-a-playbook-stored[suggested by Antora]
+the playbook and the configuration files are stored in a separate repository.
+Having a "docs" repo with the playbook, config and some documentation content together works for some setups well, always look at your use-case.
+If in doubt start small and adapt if you grow.
+
+* You probably want to have different repos as source defined in the `antora-playbook.yml` with branches or tags as references which state to use.
+
+== Using the Taskfile
+
+https://taskfile.dev[`Taskfile`]
+is a `Makefile` on steroids.
+You need to install Taskfile globally to use it.
+
+[source,bash]
+----
+# Install required dependencies via Brewfile
+brew bundle
+
+# Alternatively, install at least Taskfile (manually)
+brew install go-task
+
+# Show all tasks available
+task
+
+# Render documentation
+task generate
+
+# Render documentation and open in browser
+task generate open
+# or
+task g o
+
+# Open rendered documentation with http server
+task serve
+----
+
 == Useful links
 
+* https://diataxis.fr[Diátaxis]
 * https://antora.org[Antora]
+** https://gitlab.com/antora/antora-collector-extension[Antora collector] +
+A hook plugin to run custom code while generating the docs.
+It can be used to auto-generate `nav.adoc` files for dynamic content.
+** https://gitlab.com/antora/antora-assembler[Antora assembler] +
+A plugin which has pure AsciiDoc as output and has all the Antora magic removed.
+It can be used to generate PDFs with the whole content.
 * https://vale.sh[Vale]
 * https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
 * https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]
 * https://github.com/joelparkerhenderson/architecture-decision-record[Joels ADR]
-* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blamess.com]
-* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^]
+* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blameless.com]
+* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[dastergon/postmortem-templates^]
+* https://ahus1.de[Alexander Schwartz]
+** https://www.ahus1.de/post/content-pipeline-antora[Talk about Antora] +
+=> https://github.com/ahus1/antora-extensions-demo[Demo repo to the talk]
+** https://www.ahus1.de/post/documentation-site-antora[Another talk about Antora] +
+=> https://github.com/ahus1/intellij-asciidoc-plugin.ahus1.de[IntelliJ AsciiDoc Plugin documentation]
 
 == Support
 

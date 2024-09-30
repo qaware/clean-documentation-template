@@ -1,0 +1,57 @@
+# Reference: https://docs.antora.org/antora/latest/publish-to-github-pages/
+
+name: Publish
+on:
+  push:
+    branches: [main]
+  pull_request: ~
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Generate Site
+        run: >-
+          npx antora
+          --asciidoc-sourcemap
+          --stacktrace
+          --fetch
+          --clean
+          antora-playbook.yml
+        env:
+          ANTORA_LOG_FAILURE_LEVEL: warn
+          ANTORA_LOG_LEVEL: info
+
+      # Only publish if on main
+      # Anyway run until here to check if antora builds
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+        if: github.ref == 'refs/heads/main'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/main'

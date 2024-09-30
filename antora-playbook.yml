@@ -1,0 +1,63 @@
+# Reference: https://docs.antora.org/antora/latest/playbook/
+
+site:
+  title: Clean Documentation Template
+  url: https://qaware.github.io/clean-documentation-template
+  start_page: ROOT:ROOT:index.adoc
+
+content:
+  sources:
+    - url: .
+      start_path: docs/ROOT
+    - url: .
+      start_path: docs/architecture
+    - url: .
+      start_path: docs/developer-guide
+    - url: .
+      start_path: docs/operations-guide
+    - url: .
+      start_path: docs/user-guide
+
+ui:
+  bundle:
+    # You should supply your own bundle with custom company colors etc.
+    # https://gitlab.com/antora/antora-ui-default
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  # You can adapt the bundle on the fly while running antora
+  # https://docs.antora.org/antora/latest/playbook/ui-supplemental-files/
+  # The header-content.hbs has some nonsense menu which is removed in the override file
+  supplemental_files: ./supplemental-ui
+
+antora:
+  extensions:
+    # Add offline search
+    # https://gitlab.com/antora/antora-lunr-extension
+    - require: '@antora/lunr-extension'
+
+asciidoc:
+  extensions:
+    # Add kroki as general purpose code-to-diagram converter
+    # https://kroki.io
+    # https://github.com/asciidoctor/asciidoctor-kroki
+    - asciidoctor-kroki
+    # Antora uses in highlight.js to style code in the browser, this extension highlights the code at build time.
+    # Antora resolves names that look like files relative to the project folder, therefore add a slash as the npm package should be used.
+    - asciidoctor-highlight.js/
+  attributes:
+    # Set better defaults for xhref IDs
+    # https://docs.asciidoctor.org/asciidoc/latest/sections/id-prefix-and-separator/
+    idprefix: ''
+    idseparator: '-'
+    # Download images from kroki and do not fetch at "read time"
+    # If you don't want to send your data to kroki.io you can run your own kroki container/server
+    # https://github.com/asciidoctor/asciidoctor-kroki#using-your-own-kroki
+    # kroki-server-url: http://localhost:8000 # For locally running kroki
+    kroki-fetch-diagram: true
+    # Use build time highlighter by default
+    source-highlighter: highlightjs-ext
+
+runtime:
+  log:
+    failure_level: warn
+    level: info
