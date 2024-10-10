@@ -1,0 +1,44 @@
+= ADRs
+
+ADRs stands for "Architecture Decision Records", sometimes also referred as "Any Decision Record".
+ADRs aim to document decision and help to choose the correct option.
+ADRs have a standardized format which helps to write and read them efficiently.
+
+IMPORTANT: Please use the
+xref:attachment$template-adr.adoc[template-adr.adoc]
+for new ADRs.
+Please increment the ID by one at the end of the list. +
+**Please add the new page to the `nav.adoc`!**
+
+The states an ADR can have are describes as following.
+
+.ADR states
+[cols="^1,2,6"]
+|===
+|Emoji |Status |Description
+
+|⚙️
+|`proposed`
+|The ADR is currently WIP or proposed for approval.
+If the ADR is complex, it is probably written on a feature-branch with an MR.
+
+|🚫
+|`rejected`
+|The ADR got rejected and the proposed changes will not be implemented.
+
+|✅
+|`accepted`
+|The ADR is accepted, the changes are getting or already being implemented.
+
+|☑️
+|`deprecated`
+|The ADR is not relevant anymore.
+
+|⏭️
+|`superseded`
+|An ADR with a similar topic has been accepted and "overrides" the decisions taken.
+
+|🗑️
+|`discarded`
+|The ADR has been created but never got finished, usually due to changed context.
+|===

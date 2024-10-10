@@ -1,0 +1,115 @@
+// Inspired by https://adr.github.io/madr/decisions/adr-template.html
+// proposed ⚙️
+// rejected 🚫
+// accepted ✅
+// deprecated ☑️
+// superseded ⏭️
+// discarded 🗑️
+= ✅ ADR 0001: Eating burger for lunch
+
+[cols="1,3"]
+|===
+|*status*
+// `proposed` / `rejected` / `accepted` / `deprecated` / `discarded` / superseded by xref:page$0001-docs.adoc[ADR-0001]
+| `accepted`
+
+|*date*
+// YYYY-MM-DD when the decision was last updated
+| 2024-10-10
+
+|*deciders*
+a|
+// list everyone involved in the decision
+* Alexander Eimer
+
+|*consulted*
+a|
+// list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication
+* Alex Krause
+
+|*informed*
+a|
+// list everyone who is kept up-to-date on progress; and with whom there is a one-way communication
+* _n/a_
+|===
+
+== Context and problem statement [[context]]
+
+////
+Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
+You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.
+////
+
+For lunch it is often hard to decide between the options.
+This ADR should help to find a solution to that question.
+
+// This is an optional element. Feel free to remove.
+== Decision drivers [[decision-drivers]]
+
+* Live healthier
+* Have lunch with colleagues
+* Save money
+
+== Considered options [[considered-options]]
+
+// Leave these options as they are!
+// The rendered output will have the section names with links in place.
+* <<option-1>>
+* <<option-2>>
+
+== Decision outcome [[decision-outcome]]
+
+Chosen option: "<<option-1>>", because it is more fun and tested better.
+
+// This is an optional element. Feel free to remove.
+=== Consequences
+
+* Good, because I look forward to have lunch
+* Good, because I can eat with my colleagues
+* Bad, because I will spend more money
+* Bad, because I will get fat
+
+// This is an optional element. Feel free to remove.
+// === Confirmation
+// => Not applicable in this case
+
+////
+Describe how the implementation of/compliance with the ADR is confirmed. E.g., by a review or an ArchUnit test.
+Although we classify this element as optional, it is included in most ADRs.
+////
+
+// This is an optional element. Feel free to remove.
+== Pros and cons of the options [[pros-cons]]
+
+=== Have burger for lunch [[option-1]]
+
+Eating out in a nice burger diner is fun and many colleagues will join that lunch.
+It will have a bad impact on the spend money and the health.
+
+* Good, because join colleagues
+* Good, because yummy
+* Bad, because it costs more
+* Bad, because it's unhealthy
+
+=== Have a salad for lunch [[option-2]]
+
+Going to the store and buying a salad is boring.
+Only a few colleagues will join this activity.
+Although, it will be cheaper and healthier.
+
+* Good, because health
+* Good, because cheaper
+* Bad, because it's boring
+* Bad, because I will go alone
+
+// This is an optional element. Feel free to remove.
+== More information [[more-info]]
+
+////
+You might want to provide additional evidence/confidence for the decision outcome here and/or
+document the team agreement on the decision and/or
+define when/how this decision the decision should be realized and if/when it should be re-visited.
+Links to other decisions and resources might appear here as well.
+////
+
+_n/a_

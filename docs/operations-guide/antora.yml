@@ -1,3 +1,5 @@
 name: operations-guide
 title: 03 Operations guide
 version: ~ # This component is unversioned. The latest commit is used
+nav:
+  - modules/postmortem/nav.adoc

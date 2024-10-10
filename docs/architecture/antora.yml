@@ -1,3 +1,5 @@
 name: architecture
 title: 05 Architecture
 version: ~ # This component is unversioned. The latest commit is used
+nav:
+  - modules/adr/nav.adoc

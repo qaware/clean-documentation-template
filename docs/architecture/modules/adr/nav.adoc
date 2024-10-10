@@ -1,0 +1,2 @@
+* xref:index.adoc[]
+** xref:0001-example-adr.adoc[]

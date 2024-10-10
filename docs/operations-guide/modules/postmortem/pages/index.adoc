@@ -1,0 +1,12 @@
+= Postmortem
+
+https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[What is a blameless postmortem (BLPM)?]
+
+Template is inspired by the Google book "SRE", the template is adapted from
+https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^].
+
+IMPORTANT: Please use the
+xref:attachment$template-blpm.adoc[template-blpm.adoc]
+for new BLPMs.
+Please increment the ID by one at the end of the list. +
+**Please add the new page to the `nav.adoc`!**
