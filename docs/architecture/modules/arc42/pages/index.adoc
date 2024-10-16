@@ -1,0 +1,5 @@
+= Arc42
+
+In this section the architecture of the app is described by
+https://arc42.org[Arc42^].
+Which is a common documentation standard in the software industry.
