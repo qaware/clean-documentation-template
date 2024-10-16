@@ -1,1 +1,68 @@
 = Coding, commit and contribution guidelines
+
+Effective coding, commit, and contribution guidelines are essential for maintaining a high-quality codebase and fostering productive collaboration within development teams.
+These guidelines serve as a blueprint for consistency, clarity, and efficiency in software development.
+
+== Coding Guidelines
+
+Coding guidelines ensure that the code is written in a consistent, readable, and maintainable way.
+Here are some general coding guidelines:
+
+- *Consistency*: Adhere to a consistent coding style throughout the project.
+Use agreed-upon conventions for indentation, naming, and formatting.
+- *Comments*: Write meaningful comments to explain complex logic.
+Avoid redundant comments that state the obvious.
+- *Clear Naming*: Use descriptive and clear names for variables, functions, and classes.
+Avoid abbreviations and single-letter names unless they are universally understood.
+- *DRY Principle*: Follow the "Don't Repeat Yourself" principle.
+Reuse code wherever possible to reduce redundancy.
+- *Error Handling*: Implement robust error handling and logging mechanisms.
+Ensure that the code gracefully handles unexpected situations.
+- *Code Reviews*: Engage in regular code reviews to catch issues early and share knowledge among team members.
+
+== Commit Guidelines
+
+Commit guidelines help in maintaining a clean and understandable project history.
+They ensure that changes are recorded in a consistent format.
+
+- *Atomic Commits*: Make small, atomic commits that represent single units of work.
+Avoid combining unrelated changes in a single commit.
+- *Commit Messages*: Write clear and concise commit messages.
+A typical commit message should include:
+- *Title*: A short summary of the changes (50 characters or less).
+- *Body*: A detailed description of the changes, if necessary.
+Explain why the changes were made and reference any related issues or tickets.
+- *Prefixes*: Use common prefixes to indicate the type of change:
+- `feat`: A new feature.
+- `fix`: A bug fix.
+- `docs`: Documentation changes.
+- `style`: Code style changes (formatting, missing semi-colons, etc.).
+- `refactor`: Code refactoring without changing functionality.
+- `test`: Adding or updating tests.
+- `chore`: Other changes (build process, dependency updates, etc.).
+- *Sign-Off*: Sign off your commits to indicate that you adhere to the project's contribution guidelines.
+
+== Contribution Guidelines
+
+Contribution guidelines provide a structured approach for contributing to a project.
+They help new contributors understand how to get started and existing contributors to submit their changes effectively.
+
+- *Code of Conduct*: Include a Code of Conduct to ensure a welcoming and inclusive environment for all contributors.
+- *Setup Instructions*: Provide clear setup instructions for setting up the development environment.
+Ensure that dependencies, configuration steps, and any prerequisites are clearly documented.
+- *Issue Reporting*: Describe how to report issues or bugs.
+Encourage contributors to use templates for consistent and detailed reporting.
+- *Feature Requests*: Explain the process for suggesting new features.
+Include guidelines for discussing and approving new features before implementation.
+- *Pull Requests*: Provide a step-by-step guide for submitting pull requests.
+Emphasize the importance of:
+- Branching from the latest `main` or `develop` branch.
+- Writing tests for new features or bug fixes.
+- Updating documentation where necessary.
+- Describing changes clearly in the pull request description.
+
+== Conclusion
+
+Adhering to well-defined coding, commit, and contribution guidelines fosters a collaborative and efficient development environment.
+They ensure that the project remains maintainable, extensible, and welcoming to new contributors.
+By following these guidelines, teams can improve code quality, reduce technical debt, and enhance overall productivity.
