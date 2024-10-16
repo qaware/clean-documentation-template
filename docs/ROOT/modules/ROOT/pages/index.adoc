@@ -14,6 +14,19 @@ NOTE: This startpage could also be replaced by a proper e.g. jekyll generated pa
 https://github.com/ahus1/intellij-asciidoc-plugin.ahus1.de/tree/main/startpage[Alexander Schwartz^]
 does.
 
+== Structure
+
+This documentation is structured in four audience specific documentations.
+
+* xref:user-guide::index.adoc[]
+* xref:operations-guide::index.adoc[]
+* xref:dev-guide::index.adoc[]
+* xref:architecture::index.adoc[]
+
+== Help
+
+If you need further assistance, you can contact info@qaware.de.
+
 == Support
 
 This project is made possible with the support of

@@ -1,0 +1,4 @@
+* xref:index.adoc[]
+** xref:contribution-guidelines.adoc[]
+** xref:branching-strategy.adoc[]
+** xref:release-strategy.adoc[]

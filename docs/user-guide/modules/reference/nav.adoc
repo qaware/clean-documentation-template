@@ -1,0 +1,5 @@
+* xref:index.adoc[]
+** xref:core-features.adoc[]
+** xref:java-sdk.adoc[]
+** xref:openapi.adoc[]
+** xref:releases.adoc[]

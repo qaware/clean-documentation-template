@@ -1,0 +1,8 @@
+= How to contribute
+
+You can find the guidelines at
+xref:dev-guide:concepts:contribution-guidelines.adoc[].
+
+== Process
+
+Yada
