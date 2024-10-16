@@ -1,6 +1,7 @@
 [[section-context-and-scope]]
 = Context and Scope
 
+include::partial$arc42_config.adoc[]
 
 ifdef::arc42help[]
 [role="arc42help"]

@@ -1,6 +1,8 @@
 [[section-introduction-and-goals]]
 = Introduction and Goals
 
+include::partial$arc42_config.adoc[]
+
 ifdef::arc42help[]
 [role="arc42help"]
 ****

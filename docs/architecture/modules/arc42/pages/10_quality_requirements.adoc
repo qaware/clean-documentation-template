@@ -1,6 +1,7 @@
 [[section-quality-scenarios]]
 = Quality Requirements
 
+include::partial$arc42_config.adoc[]
 
 ifdef::arc42help[]
 [role="arc42help"]

@@ -1,6 +1,7 @@
 [[section-design-decisions]]
 = Architecture Decisions
 
+include::partial$arc42_config.adoc[]
 
 ifdef::arc42help[]
 [role="arc42help"]
