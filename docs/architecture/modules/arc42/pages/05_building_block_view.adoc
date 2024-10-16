@@ -1,9 +1,6 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-building-block-view]]
 
-
-== Building Block View
+= Building Block View
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -42,7 +39,7 @@ See https://docs.arc42.org/section-5/[Building Block View] in the arc42 document
 ****
 endif::arc42help[]
 
-=== Whitebox Overall System
+== Whitebox Overall System
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -102,7 +99,7 @@ Its headline is the name of the black box.
 ****
 endif::arc42help[]
 
-==== <Name black box 1>
+=== <Name black box 1>
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -135,24 +132,24 @@ _<(optional) Open Issues/Problems/Risks>_
 
 
 
-==== <Name black box 2>
+=== <Name black box 2>
 
 _<black box template>_
 
-==== <Name black box n>
+=== <Name black box n>
 
 _<black box template>_
 
 
-==== <Name interface 1>
+=== <Name interface 1>
 
 ...
 
-==== <Name interface m>
+=== <Name interface m>
 
 
 
-=== Level 2
+== Level 2
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -165,7 +162,7 @@ Leave out normal, simple, boring or standardized parts of your system
 ****
 endif::arc42help[]
 
-==== White Box _<building block 1>_
+=== White Box _<building block 1>_
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -176,21 +173,21 @@ endif::arc42help[]
 
 _<white box template>_
 
-==== White Box _<building block 2>_
+=== White Box _<building block 2>_
 
 
 _<white box template>_
 
 ...
 
-==== White Box _<building block m>_
+=== White Box _<building block m>_
 
 
 _<white box template>_
 
 
 
-=== Level 3
+== Level 3
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -202,7 +199,7 @@ part of arc42 for additional levels.
 ****
 endif::arc42help[]
 
-==== White Box <_building block x.1_>
+=== White Box <_building block x.1_>
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -214,12 +211,12 @@ endif::arc42help[]
 _<white box template>_
 
 
-==== White Box <_building block x.2_>
+=== White Box <_building block x.2_>
 
 _<white box template>_
 
 
 
-==== White Box <_building block y.1_>
+=== White Box <_building block y.1_>
 
 _<white box template>_

@@ -1,7 +1,5 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-glossary]]
-== Glossary
+= Glossary
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -42,3 +40,11 @@ endif::arc42help[]
 |<Term-2>
 |<definition-2>
 |===
+
+// Alternatively, a description list could also be used like so
+
+Term-1::
+Definition 1
+
+Term-2::
+Definition 2

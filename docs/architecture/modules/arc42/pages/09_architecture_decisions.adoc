@@ -1,7 +1,5 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-design-decisions]]
-== Architecture Decisions
+= Architecture Decisions
 
 
 ifdef::arc42help[]

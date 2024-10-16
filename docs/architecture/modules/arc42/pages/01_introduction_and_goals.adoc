@@ -1,7 +1,5 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-introduction-and-goals]]
-== Introduction and Goals
+= Introduction and Goals
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -17,7 +15,7 @@ These include
 ****
 endif::arc42help[]
 
-=== Requirements Overview
+== Requirements Overview
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -45,7 +43,7 @@ See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 docum
 ****
 endif::arc42help[]
 
-=== Quality Goals
+== Quality Goals
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -69,7 +67,7 @@ A table with quality goals and concrete scenarios, ordered by priorities
 ****
 endif::arc42help[]
 
-=== Stakeholders
+== Stakeholders
 
 ifdef::arc42help[]
 [role="arc42help"]

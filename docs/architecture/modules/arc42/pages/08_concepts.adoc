@@ -1,7 +1,5 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-concepts]]
-== Cross-cutting Concepts
+= Cross-cutting Concepts
 
 
 ifdef::arc42help[]
@@ -57,18 +55,16 @@ See https://docs.arc42.org/section-8/[Concepts] in the arc42 documentation.
 ****
 endif::arc42help[]
 
-=== _<Concept 1>_
+== _<Concept 1>_
 
 _<explanation>_
 
-
-
-=== _<Concept 2>_
+== _<Concept 2>_
 
 _<explanation>_
 
 ...
 
-=== _<Concept n>_
+== _<Concept n>_
 
 _<explanation>_
