@@ -47,8 +47,8 @@ usermod -aG developers john_doe
 
 === Step 3: Assign Roles
 
-1. *Create Roles*: Define roles that encapsulate various permission sets (e.g., Admin Role, Editor Role, Viewer Role).
-2. *Assign Roles*: Assign these roles to users or groups according to their access needs.
+. *Create Roles*: Define roles that encapsulate various permission sets (e.g., Admin Role, Editor Role, Viewer Role).
+. *Assign Roles*: Assign these roles to users or groups according to their access needs.
 
 [source,bash]
 Example command to assign a role to a user
@@ -56,17 +56,16 @@ usermod -aG admin_role john_doe
 
 === Step 4: Set Permissions
 
-1. *File System Permissions*: Use file system commands to set read, write, and execute permissions on directories and files.
-
+. *File System Permissions*: Use file system commands to set read, write, and execute permissions on directories and files.
++
 [source,bash]
 Example command to set file permissions
 chmod 750 /path/to/directory chown john_doe:developers /path/to/directory
-
 2. *Application Permissions*: Configure permissions within applications (e.g., database, web applications) through their specific interfaces or configuration files.
 
 === Step 5: Implement Access Control Lists (ACLs)
 
-1. *Create ACLs*: Use ACLs for fine-grained control over file and resource access.
+. *Create ACLs*: Use ACLs for fine-grained control over file and resource access.
 
 [source,bash]
 Example command to set an ACL
@@ -74,8 +73,8 @@ setfacl -m u:john_doe:rwx /path/to/file
 
 === Step 6: Review and Audit
 
-1. *Regular Audits*: Conduct regular audits to review access rights and ensure that they conform to current needs and policies.
-2. *Access Logs*: Monitor access logs to detect any unauthorized access attempts.
+. *Regular Audits*: Conduct regular audits to review access rights and ensure that they conform to current needs and policies.
+. *Access Logs*: Monitor access logs to detect any unauthorized access attempts.
 
 == Best Practices
 
