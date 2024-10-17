@@ -1,0 +1,127 @@
+= Recover a deleted database
+
+Restoring a deleted database can be quite complex, and the exact steps may vary depending on the specific database system you are using, such as MySQL, PostgreSQL, or SQL Server.
+Below are some general guidelines for restoring a deleted database.
+
+== General Guidelines
+
+* Stop Using the Server:
+** Immediately stop using the server to prevent new data from overwriting the deleted files.
+
+* Check Backups:
+** The most reliable method is to restore from a backup. Check if you have recent backups and restore from there.
+
+* Recovery Tools:
+** Use database-specific recovery tools provided by your database vendor or third-party recovery software.
+
+== Database-Specific Guidelines
+
+=== MySQL
+
+* From Backup:
+** If you have a recent backup, use the `mysql` command-line tool to restore:
++
+[source,shell]
+----
+mysql -u username -p database_name &lt; backupfile.sql
+----
+
+* InnoDB Recovery:
+** For InnoDB databases, you might need to use the `innodb_force_recovery` option in the MySQL configuration file.
+
+* Recovery Tools:
+** Tools like `MySQL Enterprise Backup` or `Percona Data Recovery Toolkit` can be helpful.
+
+=== PostgreSQL
+
+* From Backup:
+** Use the `pg_restore` command to restore from a `.dump` file:
++
+[source,shell]
+----
+pg_restore -U username -d database_name backup_file.dump
+----
+
+* Point-in-Time Recovery:
+** Use Point-in-Time Recovery (PITR) if you have Write-Ahead Logging (WAL) files.
+
+* Recovery Tools:
+** Tools like `pgBackRest` or `Barman` can be helpful.
+
+=== SQL Server
+
+* From Backup:
+** Use SQL Server Management Studio (SSMS) or a T-SQL script to restore from a backup:
++
+[source,sql]
+----
+RESTORE DATABASE database_name
+FROM DISK = 'backupfile.bak'
+WITH RECOVERY;
+----
+
+* Point-in-Time Recovery:
+** Use point-in-time restore to recover the database to a specific moment.
+
+* Recovery Tools:
+** Tools like `Redgate` or `LiteSpeed` can be useful.
+
+== Steps for Restoring from Backup
+
+* Locate Backup:
+** Find your most recent backup file.
+
+* Restore Process:
+** Initiate the restore process using your database's specific commands or tools.
+
+* Verification:
+** Verify the restored database to ensure data integrity.
+
+=== Example (MySQL)
+
+.Backup:
+[source,shell]
+----
+mysqldump -u root -p database_name &gt; database_name_backup.sql
+----
+
+.Restoration:
+[source,shell]
+----
+mysql -u root -p database_name &lt; database_name_backup.sql
+----
+
+=== Example (PostgreSQL)
+
+.Backup:
+[source,shell]
+----
+pg_dump -U username database_name &gt; database_name_backup.sql
+----
+
+.Restoration:
+[source,shell]
+----
+psql -U username -d database_name -f database_name_backup.sql
+----
+
+=== Example (SQL Server)
+
+.Backup:
+[source,sql]
+----
+BACKUP DATABASE database_name
+TO DISK = 'C:\backup\database_name.bak';
+----
+
+.Restoration:
+[source,sql]
+----
+RESTORE DATABASE database_name
+FROM DISK = 'C:\backup\database_name.bak'
+WITH RECOVERY;
+----
+
+Always make sure to have regular backups and a well-documented disaster recovery plan in place to mitigate data loss in the future.
+If the standard methods don't work, consulting with a database administrator or a professional data recovery service might be necessary.
+

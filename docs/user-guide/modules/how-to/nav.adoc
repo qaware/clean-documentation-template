@@ -1,0 +1,8 @@
+* xref:index.adoc[]
+** xref:setup-tools.adoc[]
+** xref:backup.adoc[]
+** xref:configure.adoc[]
+** xref:cli.adoc[]
+** xref:authentication.adoc[]
+** xref:migration-guide.adoc[]
+** xref:contribute.adoc[]

@@ -1,3 +1,8 @@
 name: user-guide
 title: 02 User guide
 version: ~ # This component is unversioned. The latest commit is used
+nav:
+  - modules/concepts/nav.adoc
+  - modules/how-to/nav.adoc
+  - modules/reference/nav.adoc
+  - modules/tutorial/nav.adoc
