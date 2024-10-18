@@ -1,0 +1,9 @@
+= This is a good example
+
+This is a good example of AsciiDoc as it doesn't follow the "one line per sentence" rule.
+If you just write each sentence after each other the diff's and therefore merges are getting worse to handle.
+Markdown and AsciiDoc will handle single new lines as blanks.
+In the rendered output no difference can be spotted.
+
+Run this example with
+`git diff --no-index one-line-per-sentence.good-1.adoc one-line-per-sentence.good-2.adoc`.
