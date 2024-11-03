@@ -44,6 +44,12 @@ asciidoc:
     # Antora uses in highlight.js to style code in the browser, this extension highlights the code at build time.
     # Antora resolves names that look like files relative to the project folder, therefore add a slash as the npm package should be used.
     - asciidoctor-highlight.js/
+    # Adds support for AsciiDoc math as Antora does not support it by default.
+    # The formulas are generated at build-time and are stored as SVGs.
+    # Extension: https://gitlab.com/djencks/asciidoctor-mathjax.js
+    # Discussion: https://gitlab.com/antora/antora/-/issues/184#note_291908945
+    # AsciiDoc Math docs: https://docs.asciidoctor.org/asciidoc/latest/stem/
+    - '@djencks/asciidoctor-mathjax'
   attributes:
     # Set better defaults for xhref IDs
     # https://docs.asciidoctor.org/asciidoc/latest/sections/id-prefix-and-separator/
