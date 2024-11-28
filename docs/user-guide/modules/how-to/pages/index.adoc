@@ -1,1 +1,61 @@
-= How to
+= How-to
+
+This section provides how-tos for common tasks.
+Users get guidance on how to perform specific tasks for real-world scenarios.
+
+.What to write?
+[example%collapsible]
+====
+Intention::
+Intention of this section is to guides for users of the product on how to perform specific tasks.
+This should help improve the user experience and reduce the number of support requests.
+Be concise and clear in your instructions.
+You can assume some level of familiarity with the product, but don't assume that the user is an expert.
+Add references to "reference" and "concepts" sections where appropriate.
+See
+https://diataxis.fr/how-to-guides/[How-to guides in diataxis]
+for more information.
+
+What to include::
+* Set up the project
+* Typical use cases
+** Example: Backup
+** Example: Restore
+** Example: Upgrade
+* Configuration
+* User management
+* Troubleshooting
+
+External resources::
+* https://taskfile.dev/usage/[Taskfile]
+* https://docs.spring.io/spring-boot/how-to/logging.html[Spring Boot Logging]
+* https://go.dev/doc/modules/publishing[Publish Go Modules]
+* https://www.gnu.org/software/make/manual/make.html[GNU Make]
+
+.Dependency maintenance routine guide
+[example]
+=====
+User management guide
+
+This section provides guidance on how to manage users in the system.
+Adding, removing, and updating users is a common task for administrators.
+This guide provides step-by-step instructions.
+
+. *Open user management site*
+* Open the user management site by navigating to the following URL: `https://example.com/user-management`.
+
+. *Create user*
+* Click the "Create User" button.
+* Fill in the user details.
+* Click "Save".
+
+. *Update user*
+* Click the "Edit" button next to the user you want to update.
+* Update the user details.
+* Click "Save".
+
+. *Delete user*
+* Click the "Delete" button next to the user you want to delete.
+* Confirm the deletion.
+=====
+====

@@ -1,5 +1,9 @@
 = Coding, commit and contribution guidelines
 
+WARNING::
+This document is generated and a generic example of how a page with "real content" could look like.
+It is not a real document and should not be used as a reference.
+
 Effective coding, commit, and contribution guidelines are essential for maintaining a high-quality codebase and fostering productive collaboration within development teams.
 These guidelines serve as a blueprint for consistency, clarity, and efficiency in software development.
 
