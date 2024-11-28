@@ -1,5 +1,9 @@
 = Security
 
+WARNING::
+This document is generated and a generic example of how a page with "real content" could look like.
+It is not a real document and should not be used as a reference.
+
 Security is an essential aspect of modern digital life.
 This guide aims to provide you with the necessary information to understand and implement effective security measures.
 We'll cover fundamental concepts, best practices, and practical steps to enhance your security posture.

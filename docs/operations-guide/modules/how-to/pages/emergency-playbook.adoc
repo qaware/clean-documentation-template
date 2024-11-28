@@ -1,5 +1,9 @@
 = Emergency playbook
 
+WARNING::
+This document is generated and a generic example of how a page with "real content" could look like.
+It is not a real document and should not be used as a reference.
+
 An emergency playbook is a structured guide designed to help organizations efficiently manage and respond to critical incidents. This includes unexpected disruptions, security breaches, natural disasters, or other emergencies. A well-prepared playbook ensures a quick and effective response to mitigate damage and restore normal operations.
 
 == Introduction

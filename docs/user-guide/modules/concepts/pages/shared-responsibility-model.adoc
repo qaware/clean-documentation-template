@@ -1,5 +1,9 @@
 = Shared responsibility model
 
+WARNING::
+This document is generated and a generic example of how a page with "real content" could look like.
+It is not a real document and should not be used as a reference.
+
 In cloud computing, the concept of the shared responsibility model is crucial.
 It delineates the security obligations of cloud service providers and their customers.
 Understanding this model helps organizations effectively use cloud services while ensuring comprehensive security.

@@ -1,5 +1,9 @@
 = Deploy my first app
 
+WARNING::
+This document is generated and a generic example of how a page with "real content" could look like.
+It is not a real document and should not be used as a reference.
+
 Deploying an application involves making it available to users by hosting it on a server or cloud platform.
 This guide will walk you through the steps of deploying your first app, from preparation to final deployment.
 By following these instructions, you can ensure a smooth and successful deployment process.

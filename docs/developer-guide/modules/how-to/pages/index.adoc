@@ -11,7 +11,8 @@ Intention of this section is to provide guides for developers on how to perform 
 This should help improve productivity and consistency in the development process.
 Be concise and to the point, assume the reader is competent in technology and tools used in the project.
 See
-https://diataxis.fr/how-to-guides/[How-to guides in diataxis] for more information.
+https://diataxis.fr/how-to-guides/[How-to guides in diataxis]
+for more information.
 
 
 What to include::
@@ -35,10 +36,10 @@ External resources::
 * https://github.com/spring-projects/spring-framework/wiki/Build-from-Source#import-into-your-ide[Spring Framework Build from Source]
 * https://go.dev/doc/contribute.html[Go Contributing Guide]
 
-.Dependency Maintenance Routine Guide
+.Dependency maintenance routine guide
 [example]
 =====
-Dependency Maintenance Routine Guide
+Dependency maintenance routine guide
 
 This section provides a checklist for managing dependency updates in the software project.
 Regular maintenance ensures the incorporation of improvements, security fixes, and new features while maintaining system stability.
@@ -46,44 +47,44 @@ Following a structured routine enables smooth handling of dependency updates and
 
 Process Overview:
 
-. *Review Merge Requests by Dependabot / Renovate*:
-- Check the changes proposed in the MR, including diff and commit messages.
-- Understand the context and impact of the updates.
+. *Review merge requests by dependabot / renovate*:
+* Check the changes proposed in the MR, including diff and commit messages.
+* Understand the context and impact of the updates.
 
-. *Dependency Updates*:
-- Verify the list of updated dependencies and their version changes.
-- Review release notes for breaking changes, deprecations, or relevant fixes.
+. *Dependency updates*:
+* Verify the list of updated dependencies and their version changes.
+* Review release notes for breaking changes, deprecations, or relevant fixes.
 
-. *Assignment and Ownership*:
-- Assign the MR to yourself or the appropriate team member for detailed review and feedback.
+. *Assignment and ownership*:
+* Assign the MR to yourself or the appropriate team member for detailed review and feedback.
 
-. *Testing Updates*:
-- Test changes locally or in a staging environment to ensure compatibility.
-- Use automated pipelines for regression testing where applicable.
+. *Testing updates*:
+* Test changes locally or in a staging environment to ensure compatibility.
+* Use automated pipelines for regression testing where applicable.
 
-. *Pipeline Validation*:
-- Verify the execution of pipelines and resolve any errors.
-- Regularly monitor nightly tests for hidden issues.
+. *Pipeline validation*:
+* Verify the execution of pipelines and resolve any errors.
+* Regularly monitor nightly tests for hidden issues.
 
-. *Merge Changes*:
-- Merge updates once testing and reviews are complete.
-- Follow project-specific commit message guidelines.
+. *Merge changes*:
+* Merge updates once testing and reviews are complete.
+* Follow project-specific commit message guidelines.
 
-. *Dockerfile and CI Images*:
-- Check and update Dockerfiles for base images and tools.
-- Test and verify new image builds before deployment.
+. *Dockerfile and CI images*:
+* Check and update Dockerfiles for base images and tools.
+* Test and verify new image builds before deployment.
 
-. *Security Considerations*:
-- Prioritize and assess the impact of security fixes.
-- Coordinate urgent releases for high-severity vulnerabilities.
+. *Security considerations*:
+* Prioritize and assess the impact of security fixes.
+* Coordinate urgent releases for high-severity vulnerabilities.
 
-. *Helm Charts and Falco Rules*:
-- Review changes in Helm charts and configuration.
-- Test new or updated Falco rules and resolve false positives.
+. *Helm charts and falco rules*:
+* Review changes in Helm charts and configuration.
+* Test new or updated Falco rules and resolve false positives.
 
-. *Monitoring Post-Update*:
-- Monitor for new errors or events caused by updates.
-- Address issues promptly and iterate as needed.
+. *Monitoring post-update*:
+* Monitor for new errors or events caused by updates.
+* Address issues promptly and iterate as needed.
 
 =====
 ====
