@@ -1,1 +1,103 @@
 = Tutorials
+
+This section provides tutorials that help the user to understand the basic concepts of the project.
+
+.What to write?
+[example%collapsible]
+====
+Intention::
+The text guides the user, gives tasks, shows what the solution should look like, and explains the solution.
+Examples are simplified to make the learning process easier.
+Solutions provided do not need to be production-ready code.
+Explain in small steps what the user will do and how that works.
+See
+https://diataxis.fr/tutorials/[Tutorials in diagtaxis]
+for more information.
+
+What to include::
+* Getting started
+* Basic concepts
+* Deploy my first X
+* Add Y to my X
+
+External resources::
+* https://spring.io/guides/gs/spring-boot[Spring Boot -- Getting Started Guide]
+* https://go.dev/doc/tutorial/[Go -- Tutorials]
+* https://fastapi.tiangolo.com/tutorial/[FastAPI -- Tutorial]
+* https://taskfile.dev/usage/#getting-started[Taskfile -- Getting Started Guide]
+
+.Deploy my first FastAPI application on Heroku
+[example]
+=====
+Deploy my first FastAPI application on Heroku
+
+This section will guide you through deploying your first FastAPI application on Heroku.
+Required tools are Heroku CLI, Git, and a Heroku account.
+You can set up a free account at
+https://signup.heroku.com[Heroku]
+if you don't have one.
+
+*Create the repository*
+
+Go to your local folder of choice and create a new git repository.
+
+[source,shell]
+----
+mkdir ~/workspace <1>
+cd ~/workspace <2>
+git init my-fastapi-app <3>
+cd my-fastapi-app <4>
+git commit --allow-empty -m "Initial commit" <5>
+----
+
+<1> Create a new folder to store your projects under your home directory
+<2> Change to the newly created folder
+<3> Initialize a new git repository with the name `my-fastapi-app`
+<4> Change to the newly created folder
+<5> Create an initial commit, see this
+https://www.garfieldtech.com/blog/git-empty-commit[blog article].
+
+You now have a new git repository you can work with.
+
+*Initialize FastAPI project*
+
+We now need to create a FastAPI project.
+To do this, create new file `main.py` in the root of the repository.
+Add the following code to the file:
+
+[source,python]
+----
+from typing import Union <1>
+from fastapi import FastAPI
+
+app = FastAPI() <2>
+
+
+@app.get("/") <3>
+def read_root():
+    return {"Hello": "World"} <4>
+
+
+@app.get("/items/{item_id}") <5>
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+----
+
+<1> Import the required modules
+<2> Create a new FastAPI application instance
+<3> Define a new route for the root path
+<4> Return a JSON response
+<5> Define a new route for the `/items/{item_id}` path
+
+You now have a simple FastAPI application that has two routes.
+A route on the root path `/` that returns a static JSON response and a route on `/items/{item_id}` that returns the item ID and a query parameter `q`.
+
+*Commit and push changes*
+
+...
+
+*Deploy app to Heroku*
+
+...
+=====
+====
