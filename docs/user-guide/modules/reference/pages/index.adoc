@@ -1,1 +1,52 @@
 = Reference
+
+This section provides detailed information about the product.
+Information found here is intended for users that have very good knowledge about the product and want to solve very specific tasks.
+
+.What to write?
+[example%collapsible]
+====
+Intention::
+Intention of this section is to provide detailed information about the product.
+It should help power users to solve very specific tasks.
+See
+https://diataxis.fr/reference/[Reference in diagtaxis]
+for more information.
+
+What to include::
+* Detailed information about the product
+* API documentation
+* CLI documentation
+* Configuration options
+
+External resources::
+* https://taskfile.dev/reference/cli[Taskfile -- CLI reference]
+* https://fastapi.tiangolo.com/reference/status/[FastAPI -- Status codes]
+* https://docs.docker.com/reference/[Docker -- Reference]
+* https://docs.spring.io/spring-boot/reference/web/graceful-shutdown.html[Spring Boot -- Graceful shutdown]
+
+.Product API reference
+[example]
+=====
+Product API reference
+
+This section provides detailed information about the product's API.
+
+`GET /items`::
+Returns a list of all available resources.
+
+`POST /items`::
+Creates a new resource.
+The JSON body should contain the resource data:
+[source,json]
+----
+{
+  "name": "string",
+  "description": "string"
+}
+----
+
+`GET /items/{id}`::
+Returns a specific resource.
+=====
+====

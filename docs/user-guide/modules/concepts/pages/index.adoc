@@ -1,1 +1,29 @@
 = Concepts
+
+This section provides an overview of the concepts that are important to understand when working with the product.
+
+.What to write?
+[example%collapsible]
+====
+Intention::
+This section provides a high level overview of the concepts that are important to understand when working with the product.
+This should help architects, developers, and administrators to understand the product better and make informed decisions.
+
+What to include::
+* High level overview of the concepts
+* Links to detailed information
+
+External resources::
+* https://fastapi.tiangolo.com/deployment/concepts/[FastAPI -- Deployment Concepts]
+* https://docs.microsoft.com/en-us/azure/architecture/guide/[Azure -- Architecture Center]
+* https://www.dynaconf.com/merging/[Dynaconf -- Merging]
+
+.Hierarchical structure concept
+[example]
+=====
+Hierarchical structure concept
+
+This section provides an overview of the hierarchical structure of the objects existing in the product.
+Understanding the hierarchical structure is important to understand the relationships between the objects and how they interact with each other.
+=====
+====

@@ -1,58 +1,11 @@
 = Branching strategy
 
-A branching strategy is a specific approach used by software development teams to manage the development of new features, bug fixes, and other updates within a version control system like Git.
-It helps in organizing code changes and ensuring that the final product is stable and maintainable.
-Several common branching strategies exist, each suitable for different types of projects and team structures.
-
-== Git Flow
-
-Git Flow is a popular branching strategy proposed by Vincent Driessen.
-It introduces a structured branching model with multiple long-lived branches:
-- `master`: The main branch containing stable code that is ready for production.
-- `develop`: A branch for integrating features and fixes before merging them into the master.
-- `feature/*`: Short-lived branches created from `develop` for developing new features.
-- `release/*`: Branches for preparing releases; they help in final bug fixing and preparation before merging into `master` and `develop`.
-- `hotfix/*`: Used to quickly address critical bugs found in production.
-
-This strategy is suitable for teams following a disciplined release cycle, ensuring stability and quality.
-
-== GitHub Flow
-
-GitHub Flow is a simpler, more streamlined approach predominantly used in continuous integration and deployment environments.
-It involves the following:
-- `main`: The default branch which always has deployable code.
-- `feature/*` or `branch/*`: Short-lived branches created from `main` for new work.
-Changes are committed to these branches and merged back into `main` through pull requests.
-This ensures that the `main` branch is always stable and deployable.
-
-This strategy is ideal for teams needing rapid deployment and continuous delivery.
-
-== GitLab Flow
-
-GitLab Flow incorporates aspects of both Git Flow and GitHub Flow, providing flexibility based on an organization's deployment needs.
-Key branches include:
-- `main`: Production-ready code.
-- `develop` or `staging`: Integration and testing environments.
-- `feature/*`: Branches for new features or fixes, merged into `develop` or `staging`.
-- Release management can involve tagging commits on the `main` branch or using specific release branches.
-
-This strategy works well for teams with complex workflows and multiple environments.
-
-== Trunk-Based Development
-
-In trunk-based development, all developers work on a single long-lived branch, commonly referred to as `trunk` or `main`.
-Developers frequently commit their changes directly to this branch and continuously integrate their modifications.
-This strategy promotes rapid integration and reduces merge conflicts by keeping all code changes in a single place.
-Feature branches are avoided or kept extremely short-lived.
-
-Trunk-based development is suitable for high-paced environments where frequent releases and continuous integration are critical.
-
-== Choosing the Right Strategy
-
-Choosing the right branching strategy depends on several factors:
-- Team size and structure.
-- Frequency of releases.
-- Stability and deployment requirements.
-- Integration and testing workflows.
-
-By carefully considering these factors, teams can select a branching strategy that opt
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum.
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum.
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+At vero eos et accusam et justo duo dolores et ea rebum.
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
