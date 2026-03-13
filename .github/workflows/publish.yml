@@ -23,11 +23,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
       - name: Install npm dependencies
@@ -47,7 +47,7 @@ jobs:
       # Only publish if on main
       # Anyway run until here to check if antora builds
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: build/site
         if: github.ref == 'refs/heads/main'
