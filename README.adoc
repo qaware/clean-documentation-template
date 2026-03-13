@@ -122,7 +122,7 @@ It can be used to generate PDFs with the whole content.
 
 == Support
 
-This project is made possible with the support of
+This project is made possible with the support of QAware
 
 [link="https://qaware.de"]
 image::https://www.google.com/s2/favicons?domain=qaware.de&sz=256[QAware GmbH logo,200]
