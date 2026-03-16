@@ -78,7 +78,7 @@ def read_root():
     return {"Hello": "World"} <4>
 
 
-@app.get("/items/{item_id}") <5>
+@app.get("/items/{\item_id}") <5>
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
 ----
@@ -87,10 +87,10 @@ def read_item(item_id: int, q: Union[str, None] = None):
 <2> Create a new FastAPI application instance
 <3> Define a new route for the root path
 <4> Return a JSON response
-<5> Define a new route for the `/items/{item_id}` path
+<5> Define a new route for the `/items/\{item_id}` path
 
 You now have a simple FastAPI application that has two routes.
-A route on the root path `/` that returns a static JSON response and a route on `/items/{item_id}` that returns the item ID and a query parameter `q`.
+A route on the root path `/` that returns a static JSON response and a route on `/items/\{item_id}` that returns the item ID and a query parameter `q`.
 
 *Commit and push changes*
 

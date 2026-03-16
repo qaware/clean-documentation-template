@@ -46,7 +46,7 @@ The JSON body should contain the resource data:
 }
 ----
 
-`GET /items/{id}`::
+`GET /items/\{id}`::
 Returns a specific resource.
 =====
 ====
