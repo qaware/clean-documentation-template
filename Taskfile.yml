@@ -18,6 +18,7 @@ tasks:
     run: once
     deps: [brew]
     cmds:
+      - nvm use || true
       - pre-commit install
       - task: vale-sync
 
@@ -26,7 +27,7 @@ tasks:
     internal: true
     run: once
     platforms: [darwin, linux]
-    cmd: brew bundle --no-lock --verbose
+    cmd: brew bundle --verbose
     status:
       - brew bundle check --verbose
 
